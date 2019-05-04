@@ -96,7 +96,6 @@ input[type="submit"] {
 }
 
 #pricing {
-  margin: 0 auto;
   width: 100%;
   display: flex;
   margin: 0 auto;
@@ -106,14 +105,29 @@ input[type="submit"] {
 }
 
 .tile {
-  width: 300px;
+  width: 350px;
   height: 400px;
-  /* margin: 0 auto; */
+  margin-bottom: .5rem;
   border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tile-title {
   text-align: center;
+  background-color: #888888;
+  padding: 1rem;
+}
+
+.tile-buy-btn {
+  border: 0;
+  width: 325px;
+  padding: 1rem;
+  margin: 0 auto;
+  color: hsl(120, 28%, 90%);
+  text-transform: uppercase;
+  background-color: hsl(8, 88%, 44%);
 }
 
 .price {
@@ -145,6 +159,10 @@ footer p {
   text-align: center;
 }
 
+.centered {
+  text-align: center;
+}
+
 @media (min-width: 400px) {
   header {
     flex-direction: row;
@@ -160,6 +178,14 @@ footer p {
 
 @media (min-width: 900px) {
   #pricing {
+    max-width: 1175px;
     flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1075px) {
+  .tile {
+    margin-bottom: 0;
   }
 }
