@@ -109,6 +109,7 @@ input[type="submit"] {
   font-weight: bold;
   background-color: var(--wattsdown-light-alge);
   border: 1px solid #212121;
+  border: 4px solid var(--wattsdown-dark-green);
 }
 
 #submit {
@@ -117,6 +118,7 @@ input[type="submit"] {
 
 .features-container {
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 .features-title {
@@ -144,7 +146,7 @@ input[type="submit"] {
   padding-bottom: 56.25%;
   padding-top: 35px;
   overflow: hidden;
-  border: solid;
+  border: 4px solid var(--wattsdown-dark-green);
   height: 0;
   width: 96%;
 }
@@ -175,6 +177,7 @@ input[type="submit"] {
   box-sizing: border-box;
   margin-bottom: .5rem;
   border: 1px solid #000;
+  border: 4px solid var(--wattsdown-dark-green);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
