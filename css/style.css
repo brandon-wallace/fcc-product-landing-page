@@ -112,9 +112,9 @@ a {
 }
 
 form {
-  width: 100%;
+  width: 96%;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 input[type="email"],
@@ -405,7 +405,7 @@ footer a {
             flex-direction: row;
   }
   #nav-bar {
-    max-width: 350px;
+    min-width: 350px;
   }
   #menu li {
     margin-left: 2px;
@@ -434,9 +434,6 @@ footer a {
   }
   .tile-img {
     margin: 1rem 0;
-  }
-  form {
-    max-width: 400px;
   }
 }
 
