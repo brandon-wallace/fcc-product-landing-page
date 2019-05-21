@@ -4,19 +4,20 @@
 const tileImage = document.querySelectorAll('.tile-img');
 
 
-const openModal = () => {
-    console.log(`Opening modal`);
-    document.querySelector('.modal').style.display = 'flex';
+const openModal = (event) => {
+    const modalImage = event.target.alt;
+    document.querySelector('.'+modalImage).style.display = 'flex';
 }
 
-for (let i = 0; i < tileImage.length; i++) {
-    tileImage[i].addEventListener('click', () => {
-        openModal();
-    });
-}
+
+tileImage.forEach(tile => {
+    tile.addEventListener('click', openModal);
+});
 
 
 const closeModal = () => {
-    console.log(`Closing modal`);
-    document.querySelector('.modal').style.display = 'none';
+    const modals = document.querySelectorAll('.modal');
+    for (let i = 0; i < modals.length; i++) {
+        modals[i].style.display = 'none';
+    }
 }
