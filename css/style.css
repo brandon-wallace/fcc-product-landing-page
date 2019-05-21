@@ -112,9 +112,9 @@ a {
 }
 
 form {
-  width: 100%;
+  width: 96%;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 input[type="email"],
@@ -193,7 +193,49 @@ input[type="submit"] {
   background-color: hsla(0, 0%, 0%, .25);
 }
 
+.modal {
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, .9);
+}
+
+.modal-content {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close {
+  top: 0;
+  right: 0;
+  color: inherit;
+  font-size: 3rem;
+  position: absolute;
+  transition: all 300ms ease-out;
+}
+
+.modal-close:hover {
+  transform: scale(.8) rotateZ(90deg);
+}
+
+.modal-img {
+
+}
+
 #pricing {
+  z-index: 1;
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +405,7 @@ footer a {
             flex-direction: row;
   }
   #nav-bar {
-    max-width: 350px;
+    min-width: 350px;
   }
   #menu li {
     margin-left: 2px;
@@ -376,6 +418,10 @@ footer a {
   }
   .two {
     font-size: 5.8rem;
+  }
+  .modal-content {
+    width: 70%;
+    height: 70vh;
   }
 }
 
@@ -390,17 +436,8 @@ footer a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .tile-images {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-  }
   .tile-img {
     margin: 1rem 0;
-  }
-  form {
-    max-width: 400px;
   }
 }
 
