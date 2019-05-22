@@ -8,6 +8,7 @@
   --wattsdown-charcol: #333A40;
   --wattsdown-charcol-dark: #273238;
   --wattsdown-white: #EEEEEE;
+  scroll-behavior: smooth;
 }
 
 html,
