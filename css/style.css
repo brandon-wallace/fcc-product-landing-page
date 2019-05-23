@@ -215,6 +215,17 @@ input[type="submit"] {
   position: relative;
   align-items: center;
   justify-content: center;
+  animation-name: fadein;
+  animation-duration: 1250ms;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .modal-close {
@@ -228,10 +239,6 @@ input[type="submit"] {
 
 .modal-close:hover {
   transform: scale(.8) rotateZ(90deg);
-}
-
-.modal-img {
-
 }
 
 #pricing {
