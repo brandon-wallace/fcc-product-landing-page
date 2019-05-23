@@ -109,7 +109,7 @@ a {
 
 .banner {
   font-size: 2rem;
-  font-family: 'Alex Brush', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 form {
@@ -450,6 +450,12 @@ footer a {
 }
 
 @media (min-width: 1075px) {
+  #video,
+  .video-container {
+    padding-bottom: 588px;
+    max-width: 1100px;
+    max-height: 718px;
+  }
   .tile {
     margin-bottom: 0;
   }
