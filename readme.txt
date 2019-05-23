@@ -1,3 +1,3 @@
 FCC Product Landing Page Project
 
-Mobile first, responsive HTML, and CSS.
+Mobile first, responsive Javascript, HTML, and CSS.
